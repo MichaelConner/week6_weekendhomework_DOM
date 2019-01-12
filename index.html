@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squad List App</title>
+    <link rel="stylesheet" type="css" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+    <form id = "new-player-form">
+
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id = "firstname" required/>
+      </div>
+
+      <div>
+        <label for "last-name">Last Name:</label>
+        <input type="text" id="lastname" required/>
+      </div>
+
+      <div>
+        <label for="position">Position:</label>
+        <select id="position">
+          <option value ="pick a position" disabled selected></option>
+          <option value ="Goalkeeper">Goalkeeper</option>
+          <option value ="Defender">Defender</option>
+          <option value ="Midfielder">Midfielder</option>
+          <option value ="Forward">Forward</option>
+        </select>
+        <input type="submit" value="add"/>
+      </div>
+
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Squad List</h1>
+    <div id="squad-list"></div>
+
+  </body>
+</html>
