@@ -20,9 +20,15 @@
       </div>
 
       <div>
+        <label for "preferred-foot">Preferred Foot:</label>
+        <input type="radio" id="footed" required name="preferred-foot" value="Left">Left<br>
+        <input type="radio" id="footed" required name="preferred-foot" value="Right">Right<br>
+        <input type="radio" id="footed" required name="preferred-foot" value="Both">Both<br>
+      </div>
+
+      <div>
         <label for="position">Position:</label>
-        <select id="position">
-          <option value ="pick a position" disabled selected></option>
+        <select id="position" required>
           <option value ="Goalkeeper">Goalkeeper</option>
           <option value ="Defender">Defender</option>
           <option value ="Midfielder">Midfielder</option>

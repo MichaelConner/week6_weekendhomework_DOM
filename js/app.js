@@ -18,18 +18,22 @@ const handleNewPlayerFormSubmit = function (event) {
 }
 
 const createSquadListItem = function (form) {
-  const squadListItem = document.createElement('li');
+  const squadListItem = document.createElement('tr');
   squadListItem.classList.add('squad-list-item');
 
-  const firstName = document.createElement('h2');
+  const firstName = document.createElement('td');
   firstName.textContent = form.firstname.value;
   squadListItem.appendChild(firstName);
 
-  const lastName = document.createElement('h3');
+  const lastName = document.createElement('td');
   lastName.textContent = form.lastname.value;
   squadListItem.appendChild(lastName);
 
-  const position = document.createElement('p');
+  const footed = document.createElement('td');
+  footed.textContent = form.footed.value;
+  squadListItem.appendChild(footed);
+
+  const position = document.createElement('td');
   position.textContent = form.position.value;
   squadListItem.appendChild(position);
 
